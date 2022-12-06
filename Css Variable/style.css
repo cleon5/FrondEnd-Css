@@ -1,0 +1,21 @@
+:root {
+  --color: #2e343f;
+  --position: 0;
+  --radius: 0;
+}
+.style {
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+.containerInput {
+  margin: 1%;
+}
+
+.object {
+  border-radius: var(--radius);
+  transform: translateX(var(--position));
+  margin-left: 1%;
+  width: 100px;
+  height: 100px;
+  background-color: var(--color);
+}

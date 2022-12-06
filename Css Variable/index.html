@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="style">
+        <div class="containerInput">
+            <label for="location">Ubicacion</label>
+            <input type="range" name="location" id="location" min="0" max="100" value="0"
+                oninput="changeValue('position', this.value)">
+        </div>
+        <div class="containerInput">
+            <label for="radius">Border Radius</label>
+            <input type="range" name="radius" id="radius" min="0" max="50" value="0"
+                oninput="changeValue('radius', this.value)">
+        </div>
+        <div class="containerInput">
+            <label for="color">Color</label>
+            <input type="color" name="color" id="color" value="#2E343F" oninput="changeValue('color', this.value)">
+        </div>
+
+    </div>
+
+    <div class="object"></div>
+
+
+    <script src="./js.js"></script>
+</body>
+
+</html>
