@@ -1,0 +1,62 @@
+:root{
+    --radiusA: 0;
+    --radiusB: 0;
+    --radiusC: 0;
+    --radiusD: 0;
+    --color:rgb(34, 37, 190);
+}
+body{
+    background: rgb(221,122,202);
+    background: linear-gradient(90deg, rgba(221,122,202,1) 0%, rgba(255,0,116,1) 100%);
+    
+}
+.body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+}
+.form{
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+.sectionInput{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.btnCopy{
+    width: 80px;
+    padding: 15px;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border-style:dashed;
+    font-size: 20px;
+    background-color: rgb(69, 2, 90);
+    margin: 0 auto;
+
+}
+.pre{
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.preview{
+    width: 60%;
+    aspect-ratio: 1/1;  
+    margin: 0 auto; 
+    
+    border-top-left-radius: var(--radiusA);
+    border-top-right-radius: var(--radiusB);
+    border-bottom-left-radius: var(--radiusC);
+    border-bottom-right-radius: var(--radiusD);
+
+    background-color: var(--color);
+    box-shadow: 10px 10px 45px -2px rgba(0,0,0,0.75);
+}
